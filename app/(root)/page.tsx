@@ -1,7 +1,9 @@
+import FeaturedHero from "@/components/hero/featured-hero/featured-hero";
+
 const Home = () => {
   return (
-    <div className="container mx-auto">
-      <p>Home things will render here soon</p>
+    <div className="">
+      <FeaturedHero />
     </div>
   );
 };
