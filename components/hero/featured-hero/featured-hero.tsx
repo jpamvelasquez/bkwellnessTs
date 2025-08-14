@@ -43,16 +43,18 @@ const FeaturedHero = () => {
           nextEl: nextRef.current,
         }}
         onBeforeInit={(swiper) => {
-          if (typeof swiper.params.navigation !== "boolean") {
-            swiper.params.navigation.prevEl = prevRef.current;
-            swiper.params.navigation.nextEl = nextRef.current;
+          const navigation = swiper.params.navigation;
+
+          if (navigation && typeof navigation !== "boolean") {
+            navigation.prevEl = prevRef.current;
+            navigation.nextEl = nextRef.current;
           }
         }}
         className="h-[70vh] w-full"
       >
         {featuredHeroContent.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="relative h-[70vh] w-full">
+            <div className="relative h-[70vh] w-full ">
               <Image
                 src={item.imageUrl}
                 alt={item.title}
@@ -62,7 +64,9 @@ const FeaturedHero = () => {
               />
               <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-start px-8 md:px-28 text-white">
                 <h2 className="text-5xl font-bold mb-2">{item.title}</h2>
-                <p className="mb-4 max-w-md text-xl my-4">{item.description}</p>
+                <p className="mb-4 max-w-2xl text-xl my-4">
+                  {item.description}
+                </p>
                 <Link
                   href={item.link}
                   className=" text-black px-8 mt-10 py-3 rounded-full font-bold  hover:bg-gray-200 bg-amber-200 transition"
