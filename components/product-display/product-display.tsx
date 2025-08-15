@@ -38,14 +38,11 @@ const ProductDisplay = () => {
                 className="object-cover object-center rounded  transition-transform duration-300 ease-in-out group-hover:scale-125"
               />
             </div>
-            <div className="flex  justify-between py-3">
+            <div className="flex  justify-between items-center py-3">
               <h4 className="font-bold md:text-lg text-lg">{p.name}</h4>
               <Link href={`products/${p.slug}`}>
-                <Button
-                  variant="secondary"
-                  className="rounded-full max-w-fit px-5 hover:bg-amber-200  transition-all duration-300 ease-in-out"
-                >
-                  View
+                <Button className="rounded-full max-w-fit px-5 bg-stone-200 text-black hover:bg-amber-200  transition-all duration-300 ease-in-out">
+                  More Info
                 </Button>
               </Link>
             </div>
