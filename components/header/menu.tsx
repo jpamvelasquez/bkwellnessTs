@@ -17,14 +17,17 @@ const Menus = () => {
       <div className="flex justify-between items-center">
         <div className="flex gap-2">
           <Sheet open={open} onOpenChange={setOpen}>
-            <SheetTrigger asChild>
+            <SheetTrigger
+              asChild
+              className="focus-visible:outline-none focus-visible:ring-0"
+            >
               <button onClick={() => setOpen(!open)}>
                 <Menu />
               </button>
             </SheetTrigger>
 
             <SheetContent
-              className=" w-[350px] [&_button]:hidden border-none bg-stone-200 "
+              className=" w-[350px] [&_button]:hidden border-none bg-stone-200 focus-visible:outline-none focus-visible:ring-0"
               side="left"
             >
               <div className="p-6 flex flex-col gap-4 ">

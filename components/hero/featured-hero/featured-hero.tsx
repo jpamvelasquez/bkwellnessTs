@@ -67,7 +67,7 @@ const FeaturedHero = () => {
               </div>
 
               {/* Text Section */}
-              <div className="bg-stone-600 text-white px-3 pt-6 pb-10 md:absolute md:inset-0 md:bg-black/50 md:text-white md:flex md:flex-col md:justify-center md:items-start md:px-28 md:pt-0 md:pb-0 md:h-[70vh] min-h-[28vh] ">
+              <div className="bg-stone-400 text-white px-3 pt-6 pb-10 md:absolute md:inset-0 md:bg-black/50 md:text-white md:flex md:flex-col md:justify-center md:items-start md:px-28 md:pt-0 md:pb-0 md:h-[70vh] min-h-[40vh] ">
                 <h2 className="text-2xl md:text-5xl font-bold mb-4 text-center md:text-left">
                   {item.title}
                 </h2>
