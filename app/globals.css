@@ -117,10 +117,10 @@ body {
   --sidebar-ring: oklch(0.553 0.013 58.071);
 }
 
-[data-slot="sheet-overlay"] {
+/* [data-slot="sheet-overlay"] {
   background-color: transparent !important;
   pointer-events: none !important;
-}
+} */
 
 .navigation-menu-trigger,
 .navigation-menu-trigger:hover,

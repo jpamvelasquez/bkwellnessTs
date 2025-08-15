@@ -19,15 +19,21 @@ const Menus = () => {
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <button onClick={() => setOpen(!open)}>
-                {open ? <X /> : <Menu />}
+                <Menu />
               </button>
             </SheetTrigger>
 
             <SheetContent
-              className="top-18 w-[370px] [&_button]:hidden border-none bg-stone-200 "
+              className=" w-[350px] [&_button]:hidden border-none bg-stone-200 "
               side="left"
             >
               <div className="p-6 flex flex-col gap-4 ">
+                <div className="flex justify-between mb-6">
+                  <div className="font-bold text-2xl">BKWellness</div>
+                  <div onClick={() => setOpen(!open)}>
+                    <X />
+                  </div>
+                </div>
                 <p>Home</p>
                 <p>About Us</p>
                 <p>Teas</p>
