@@ -21,7 +21,7 @@ const FeaturedHero = () => {
     <div className="relative mx-auto">
       <button
         ref={prevRef}
-        className="absolute z-10 bottom-12 md:right-47 right-19 rounded-s-full -translate-y-1/2 bg-stone-300  hover:text-white text-black p-2  shadow-md cursor-pointer"
+        className="absolute hidden md:block z-10 bottom-12 md:right-47 right-19 rounded-s-full -translate-y-1/2 bg-stone-300  hover:text-white text-black p-2  shadow-md cursor-pointer"
       >
         <ChevronLeft className="md:w-9 md:h-9" />
       </button>
@@ -29,7 +29,7 @@ const FeaturedHero = () => {
       {/* Custom Next Button */}
       <button
         ref={nextRef}
-        className="absolute z-10 bottom-12 md:right-34 right-12 rounded-r-full -translate-y-1/2 bg-stone-300  hover:text-white text-black p-2 cursor-pointer"
+        className="absolute hidden md:block z-10 bottom-12 md:right-34 right-12 rounded-r-full -translate-y-1/2 bg-stone-300  hover:text-white text-black p-2 cursor-pointer"
       >
         <ChevronRight className="md:w-9 md:h-9" />
       </button>
@@ -50,29 +50,37 @@ const FeaturedHero = () => {
             navigation.nextEl = nextRef.current;
           }
         }}
-        className="h-[70vh] w-full"
+        className="md:h-[70vh] w-full"
       >
         {featuredHeroContent.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="relative h-[70vh] w-full ">
-              <Image
-                src={item.imageUrl}
-                alt={item.title}
-                fill
-                className="object-cover"
-                priority
-              />
-              <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-start px-8 md:px-28 text-white">
-                <h2 className="text-5xl font-bold mb-2">{item.title}</h2>
-                <p className="mb-4 max-w-2xl text-xl my-4">
+            <div className="flex flex-col relative">
+              {/* Image Section */}
+              <div className="relative md:h-[70vh] h-[40vh] w-full">
+                <Image
+                  src={item.imageUrl}
+                  alt={item.title}
+                  fill
+                  className="object-cover object-center"
+                  priority
+                />
+              </div>
+
+              {/* Text Section */}
+              <div className="bg-stone-600 text-white px-3 pt-6 pb-10 md:absolute md:inset-0 md:bg-black/50 md:text-white md:flex md:flex-col md:justify-center md:items-start md:px-28 md:pt-0 md:pb-0 md:h-[70vh] min-h-[28vh] ">
+                <h2 className="text-2xl md:text-5xl font-bold mb-4 text-center md:text-left">
+                  {item.title}
+                </h2>
+                <p className=" md:max-w-2xl text-base md:text-xl mb-4 text-center md:text-left">
                   {item.description}
                 </p>
-                <Link
-                  href={item.link}
-                  className=" text-black px-8 mt-10 py-3 rounded-full font-bold  hover:bg-gray-200 bg-amber-200 transition"
-                >
-                  Shop Now
-                </Link>
+                <div className="flex justify-center md:justify-start">
+                  <Link href={item.link}>
+                    <p className="md:text-black text-black bg-amber-200 px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition">
+                      Shop Now
+                    </p>
+                  </Link>
+                </div>
               </div>
             </div>
           </SwiperSlide>
