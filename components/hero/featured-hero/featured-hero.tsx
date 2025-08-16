@@ -67,19 +67,21 @@ const FeaturedHero = () => {
               </div>
 
               {/* Text Section */}
-              <div className="bg-stone-400 text-white px-3 pt-6 pb-10 md:absolute md:inset-0 md:bg-black/50 md:text-white md:flex md:flex-col md:justify-center md:items-start md:px-28 md:pt-0 md:pb-0 md:h-[70vh] min-h-[40vh] ">
-                <h2 className="text-2xl md:text-5xl font-bold mb-4 text-center md:text-left">
-                  {item.title}
-                </h2>
-                <p className=" md:max-w-2xl text-base md:text-xl mb-4 text-center md:text-left">
-                  {item.description}
-                </p>
-                <div className="flex justify-center md:justify-start">
-                  <Link href={item.link}>
-                    <p className="md:text-black text-black bg-amber-200 px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition">
-                      Shop Now
-                    </p>
-                  </Link>
+              <div className="bg-stone-400 text-white px-3 pt-6 pb-10 md:absolute md:inset-0 md:bg-black/50 md:text-white md:justify-center md:h-[70vh]">
+                <div className="flex flex-col md:h-[70vh] h-[180px] justify-center container mx-auto ">
+                  <h2 className="text-2xl md:text-5xl font-bold mb-4 text-center md:text-left">
+                    {item.title}
+                  </h2>
+                  <p className=" md:max-w-2xl text-base md:text-xl mb-4 text-center md:text-left">
+                    {item.description}
+                  </p>
+                  <div className="flex justify-center md:justify-start">
+                    <Link href={item.link}>
+                      <p className="md:text-black text-black bg-amber-200 px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition">
+                        Shop Now
+                      </p>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
