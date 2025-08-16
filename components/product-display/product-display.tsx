@@ -30,18 +30,21 @@ const ProductDisplay = () => {
       <div className="flex flex-col md:flex-row px-3 justify-evenly  items-center gap-4">
         {product.map((p, i) => (
           <div key={i} className="group">
-            <div className="relative xl:h-[400px] xl:w-80 group overflow-hidden md:h-[200px] md:w-50 h-[350px] w-80 ">
+            <div className="relative xl:h-[400px] xl:w-80 group overflow-hidden md:h-[300px] md:w-52 h-[350px] w-80 lg:h-[370px] lg:w-80">
               <Image
-                alt="product"
+                alt={p.name}
                 src={p.imageUrl}
                 fill
                 className="object-cover object-center rounded  transition-transform duration-300 ease-in-out group-hover:scale-125"
               />
             </div>
-            <div className="flex  justify-between items-center py-3">
-              <h4 className="font-bold md:text-lg text-lg">{p.name}</h4>
+            <div className="  gap-2 py-3">
+              <h4 className="font-bold text-md">{p.name}</h4>
               <Link href={`products/${p.slug}`}>
-                <Button className="rounded-full max-w-fit px-5 bg-stone-200 text-black hover:bg-amber-200  transition-all duration-300 ease-in-out">
+                <Button
+                  variant="link"
+                  className=" text-sm  text-black transition-all duration-500 ease-in-out p-0 group-hover:underline"
+                >
                   More Info
                 </Button>
               </Link>

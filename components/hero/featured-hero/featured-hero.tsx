@@ -50,13 +50,13 @@ const FeaturedHero = () => {
             navigation.nextEl = nextRef.current;
           }
         }}
-        className="md:h-[70vh] w-full"
+        className="md:h-[70vh] w-full 2xl:h-[70vh] xl:h-[70vh] lg:h-[600px]"
       >
         {featuredHeroContent.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="flex flex-col relative">
               {/* Image Section */}
-              <div className="relative md:h-[70vh] h-[40vh] w-full">
+              <div className="relative lg:h-[600px] h-[40vh] w-full 2xl:h-[70vh] xl:h-[70vh] md:h-[70vh]">
                 <Image
                   src={item.imageUrl}
                   alt={item.title}
@@ -67,8 +67,8 @@ const FeaturedHero = () => {
               </div>
 
               {/* Text Section */}
-              <div className="bg-stone-400 text-white px-3 pt-6 pb-10 md:absolute md:inset-0 md:bg-black/50 md:text-white md:justify-center md:h-[70vh]">
-                <div className="flex flex-col md:h-[70vh] h-[180px] justify-center container mx-auto ">
+              <div className="bg-stone-400 text-white px-3 pt-6 pb-10 md:absolute md:inset-0 md:bg-black/50 md:text-white md:justify-center lg:h-[600px] md:h-[70vh] xl:h-[70vh] 2xl:h-[70vh]">
+                <div className="flex flex-col lg:h-[600px] md:h-[70vh] h-[180px] justify-center container mx-auto ">
                   <h2 className="text-2xl md:text-5xl font-bold mb-4 text-center md:text-left">
                     {item.title}
                   </h2>

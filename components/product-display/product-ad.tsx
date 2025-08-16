@@ -3,9 +3,9 @@ import { Button } from "../ui/button";
 
 const ProductAdd = () => {
   return (
-    <div className="md:h-[60vh] bg-amber-100 w-full lg:h-[70vh] xl:h-[60vh] ">
+    <div className="md:h-[60vh] bg-amber-100 w-full lg:h-[500px] xl:h-[60vh] 2xl:h-[60vh] ">
       <div className="flex flex-col relative">
-        <div className="relative md:h-[60vh] h-[50vh] w-full lg:h-[70vh] xl:h-[60vh] ">
+        <div className="relative md:h-[60vh] h-[50vh] w-full lg:h-[500px] xl:h-[60vh] 2xl:h-[60vh] ">
           <Image
             src="/products/cuppa.jpg"
             alt="tea"
@@ -13,7 +13,7 @@ const ProductAdd = () => {
             className="object-cover md:object-[left_50%] object-[center_50%]"
           />
         </div>
-        <div className="bg-stone text-white md:inset-0 md:absolute  lg:flex lg:flex-col  lg:px-3 xl:px-20 2xl:px-28 container mx-auto ">
+        <div className="bg-stone text-white md:inset-0 md:absolute  lg:flex lg:flex-col  lg:px-3 xl:px-20 2xl:px-28 container mx-auto z-10 ">
           <div className="md:max-w-2xl  w-full flex flex-col h-full  justify-center lg:px-3 md:px-3 lg:max-w-xl xl:max-w-2xl ">
             <div className="2xl:bg-stone-300 md:bg-stone-300/40 md:text-white 2xl:text-black p-6 flex flex-col gap-4 md:gap-8 rounded-md text-black bg-stone-300">
               <h2 className="md:text-4xl lg:text-2xl font-bold text-2xl">

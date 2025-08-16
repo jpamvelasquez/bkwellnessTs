@@ -10,7 +10,7 @@ const CustomerReviews = () => {
           Don&apos;t just take our word for it. Here&apos;s what other customers
           think
         </h3>
-        <div className="md:grid md:grid-cols-5 xl:max-w-5xl md:max-w-4xl mx-auto gap-4 items-starta  ">
+        <div className="md:grid md:grid-cols-5 xl:max-w-5xl md:max-w-4xl mx-auto gap-4 items-start  ">
           <div className="md:col-span-1 text-center mb-8 md:mb-0">
             <p className="font-bold">Let customer speak for us</p>
             <div className="flex gap-1 justify-center">

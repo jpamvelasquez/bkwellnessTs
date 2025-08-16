@@ -9,7 +9,7 @@ const WelcomeTea = () => {
       </h3>
       <div className="lg:grid grid-cols-5  gap-8 max-w-6xl mx-auto mt-8 px-3">
         <div className="col-span-2 ">
-          <div className="relative h-[50vh] md:h-[40vh] lg:h-[55vh] 2xl:h-[40vh]">
+          <div className="relative h-[50vh] md:h-[40vh] lg:h-[300px] 2xl:h-[40vh] xl:h-[40vh]">
             <Image
               src="/teas/plant.jpg"
               alt="teas"
