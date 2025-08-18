@@ -47,13 +47,10 @@ const Menus = () => {
                       <Accordion
                         type="single"
                         collapsible
-                        className="w-full  !border-none !focus-visible:outline-none !focus-visible:ring-0"
+                        className="w-full !border-none !focus-visible:outline-none !focus-visible:ring-0"
                       >
-                        <AccordionItem
-                          value="products"
-                          className="!border-none data-[state=open]:!border-none data-[state=closed]:!border-none"
-                        >
-                          <AccordionTrigger className="py-4 font-medium text-left">
+                        <AccordionItem value="products" className="border-none">
+                          <AccordionTrigger className=" font-medium text-left">
                             Products
                           </AccordionTrigger>
                           <AccordionContent className="pl-4 pb-4 pt-1 flex flex-col gap-4 text-gray-600">
@@ -106,53 +103,57 @@ const Menus = () => {
 
                     <p className="py-4">Community</p>
                     {/* Discover Accordion */}
-                    <Accordion
-                      type="single"
-                      collapsible
-                      className="w-full  border-none focus-visible:outline-none focus-visible:ring-0"
-                    >
-                      <AccordionItem value="discover" className="border-none">
-                        <AccordionTrigger className="py-4 font-medium text-left">
-                          Discover
-                        </AccordionTrigger>
-                        <AccordionContent className="pl-4 pb-4 pt-1 flex flex-col gap-4 text-gray-600">
-                          <div>
-                            <p className="uppercase mb-2">Our story</p>
-                            <p>
-                              Lorem ipsum dolor sit, amet consectetur
-                              adipisicing elit. Quidem dolor doloremque, esse
-                            </p>
-                            <div className="flex gap-3 overflow-x-auto  hide-scrollbar">
-                              <div className="relative w-32 h-32 flex-shrink-0">
-                                <Image
-                                  src="/products/cuppa.jpg"
-                                  alt="Cup"
-                                  fill
-                                  className="object-cover"
-                                />
-                              </div>
-                              <div className="relative w-32 h-32 flex-shrink-0">
-                                <Image
-                                  src="/products/cuppa.jpg"
-                                  alt="Cup"
-                                  fill
-                                  className="object-cover"
-                                />
-                              </div>
-                              <div className="relative w-32 h-32 flex-shrink-0">
-                                <Image
-                                  src="/products/cuppa.jpg"
-                                  alt="Cup"
-                                  fill
-                                  className="object-cover"
-                                />
+
+                    <div>
+                      <Accordion
+                        type="single"
+                        collapsible
+                        className="w-full  border-none focus-visible:outline-none focus-visible:ring-0"
+                      >
+                        <AccordionItem value="discover" className="border-none">
+                          <AccordionTrigger className=" font-medium text-left">
+                            Discover
+                          </AccordionTrigger>
+                          <AccordionContent className="pl-4 pb-4 pt-1 flex flex-col gap-4 text-gray-600">
+                            <div>
+                              <p className="uppercase mb-2">Our story</p>
+                              <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Quidem dolor doloremque, esse
+                              </p>
+                              <div className="flex gap-3 overflow-x-auto  hide-scrollbar">
+                                <div className="relative w-32 h-32 flex-shrink-0">
+                                  <Image
+                                    src="/products/cuppa.jpg"
+                                    alt="Cup"
+                                    fill
+                                    className="object-cover"
+                                  />
+                                </div>
+                                <div className="relative w-32 h-32 flex-shrink-0">
+                                  <Image
+                                    src="/products/cuppa.jpg"
+                                    alt="Cup"
+                                    fill
+                                    className="object-cover"
+                                  />
+                                </div>
+                                <div className="relative w-32 h-32 flex-shrink-0">
+                                  <Image
+                                    src="/products/cuppa.jpg"
+                                    alt="Cup"
+                                    fill
+                                    className="object-cover"
+                                  />
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <Link href="/">Our Commitment</Link>
-                        </AccordionContent>
-                      </AccordionItem>
-                    </Accordion>
+                            <Link href="/">Our Commitment</Link>
+                          </AccordionContent>
+                        </AccordionItem>
+                      </Accordion>
+                    </div>
+                    <p className="py-4">US</p>
                   </div>
                 </div>
 
