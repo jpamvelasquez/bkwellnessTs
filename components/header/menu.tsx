@@ -43,17 +43,17 @@ const Menus = () => {
                   <div className="flex flex-col gap-0 divide-y divide-gray-300 text-gray-800 text-sm">
                     <p className="py-4">Home</p>
                     <p className="py-4">About Us</p>
-                    <Accordion
-                      type="single"
-                      collapsible
-                      className="w-full  border-none focus-visible:outline-none focus-visible:ring-0  "
-                    >
-                      <AccordionItem value="teas" className="border-none">
-                        <AccordionTrigger className="py-4 font-medium text-left">
-                          Teas
-                        </AccordionTrigger>
-                        <AccordionContent className="pl-4 pb-4 pt-1 flex flex-col gap-4 text-gray-600">
-                          <div>
+                    <div className="">
+                      <Accordion
+                        type="single"
+                        collapsible
+                        className="w-full  border-none focus-visible:outline-none focus-visible:ring-0"
+                      >
+                        <AccordionItem value="teas" className="border-none">
+                          <AccordionTrigger className="py-4 font-medium text-left">
+                            Teas
+                          </AccordionTrigger>
+                          <AccordionContent className="pl-4 pb-4 pt-1 flex flex-col gap-4 text-gray-600">
                             <p className="uppercase mb-2">Turmeric 14in1</p>
                             <p className="my-2">
                               Lorem ipsum dolor sit, amet consectetur
@@ -94,10 +94,11 @@ const Menus = () => {
                                 <p className="my-2">350 Grams</p>
                               </div>
                             </div>
-                          </div>
-                        </AccordionContent>
-                      </AccordionItem>
-                    </Accordion>
+                          </AccordionContent>
+                        </AccordionItem>
+                      </Accordion>
+                    </div>
+
                     <p className="py-4">Community</p>
                     {/* Discover Accordion */}
                     <Accordion
