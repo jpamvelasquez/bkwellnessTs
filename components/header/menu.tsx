@@ -59,7 +59,7 @@ const Menus = () => {
                               Lorem ipsum dolor sit, amet consectetur
                               adipisicing elit. Quidem dolor doloremque, esse
                             </p>
-                            <div className="flex gap-3 overflow-x-auto whitespace-nowrap">
+                            <div className="flex gap-3 overflow-x-auto hide-scrollbar">
                               <div>
                                 <div className="relative w-32 h-32 flex-shrink-0">
                                   <Image
