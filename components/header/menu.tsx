@@ -40,7 +40,7 @@ const Menus = () => {
                   </div>
 
                   {/* Menu Items */}
-                  <div className="flex flex-col gap-0  text-gray-800 text-sm">
+                  <div className="flex flex-col gap-0 divide-y divide-gray-300 text-gray-800 text-sm">
                     <p className="py-4">Home</p>
                     <p className="py-4">About Us</p>
                     <div className="">
@@ -51,7 +51,7 @@ const Menus = () => {
                       >
                         <AccordionItem
                           value="products"
-                          className="!border-none !shadow-none !focus-visible:outline-none !focus-visible:ring-0"
+                          className="!border-none data-[state=open]:!border-none data-[state=closed]:!border-none"
                         >
                           <AccordionTrigger className="py-4 font-medium text-left">
                             Products
