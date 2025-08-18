@@ -43,10 +43,9 @@ const Menus = () => {
                   <div className="flex flex-col gap-0 divide-y divide-gray-300 text-gray-800 text-sm">
                     <p className="py-4">Home</p>
                     <p className="py-4">About Us</p>
-                    {/* <div className="">
+                    <div className="">
                       <Accordion
-                        type="single"
-                        collapsible
+                        type="multiple"
                         className="w-full !border-none !focus-visible:outline-none !focus-visible:ring-0"
                       >
                         <AccordionItem value="products" className="border-none">
@@ -99,15 +98,14 @@ const Menus = () => {
                           </AccordionContent>
                         </AccordionItem>
                       </Accordion>
-                    </div> */}
+                    </div>
 
                     <p className="py-4">Community</p>
                     {/* Discover Accordion */}
 
                     <div>
                       <Accordion
-                        type="single"
-                        collapsible
+                        type="multiple"
                         className="w-full  border-none focus-visible:outline-none focus-visible:ring-0"
                       >
                         <AccordionItem value="discover" className="border-none">
