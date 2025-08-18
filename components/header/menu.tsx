@@ -47,50 +47,58 @@ const Menus = () => {
                       <Accordion
                         type="single"
                         collapsible
-                        className="w-full  border-none focus-visible:outline-none focus-visible:ring-0"
+                        className="w-full  !border-none !focus-visible:outline-none !focus-visible:ring-0"
                       >
                         <AccordionItem
-                          value="teas"
+                          value="products"
                           className="!border-none !shadow-none"
                         >
                           <AccordionTrigger className="py-4 font-medium text-left">
-                            Teas
+                            Products
                           </AccordionTrigger>
                           <AccordionContent className="pl-4 pb-4 pt-1 flex flex-col gap-4 text-gray-600">
                             <div>
-                              <p className="uppercase mb-2">Our story</p>
-                              <p>
+                              <p className="uppercase mb-2">What we have</p>
+                              <p className="mb-3">
                                 Lorem ipsum dolor sit, amet consectetur
                                 adipisicing elit. Quidem dolor doloremque, esse
                               </p>
                               <div className="flex gap-3 overflow-x-auto  hide-scrollbar">
-                                <div className="relative w-32 h-32 flex-shrink-0">
-                                  <Image
-                                    src="/products/cuppa.jpg"
-                                    alt="Cup"
-                                    fill
-                                    className="object-cover"
-                                  />
+                                <div>
+                                  <div className="relative w-32 h-32 flex-shrink-0">
+                                    <Image
+                                      src="/products/honey.jpg"
+                                      alt="Cup"
+                                      fill
+                                      className="object-cover"
+                                    />
+                                  </div>
+                                  <p className="mt-2">Honey</p>
                                 </div>
-                                <div className="relative w-32 h-32 flex-shrink-0">
-                                  <Image
-                                    src="/products/cuppa.jpg"
-                                    alt="Cup"
-                                    fill
-                                    className="object-cover"
-                                  />
+                                <div>
+                                  <div className="relative w-32 h-32 flex-shrink-0">
+                                    <Image
+                                      src="/products/jar.jpg"
+                                      alt="Cup"
+                                      fill
+                                      className="object-cover"
+                                    />
+                                  </div>
+                                  <p className="mt-2">Tea</p>
                                 </div>
-                                <div className="relative w-32 h-32 flex-shrink-0">
-                                  <Image
-                                    src="/products/cuppa.jpg"
-                                    alt="Cup"
-                                    fill
-                                    className="object-cover"
-                                  />
+                                <div className="">
+                                  <div className="relative w-32 h-32 flex-shrink-0">
+                                    <Image
+                                      src="/products/juice.jpg"
+                                      alt="Cup"
+                                      fill
+                                      className="object-cover"
+                                    />
+                                  </div>
+                                  <p className="mt-2">Juices</p>
                                 </div>
                               </div>
                             </div>
-                            <Link href="/">Our Commitment</Link>
                           </AccordionContent>
                         </AccordionItem>
                       </Accordion>
