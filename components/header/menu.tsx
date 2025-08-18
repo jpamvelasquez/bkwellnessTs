@@ -153,7 +153,6 @@ const Menus = () => {
                         </AccordionItem>
                       </Accordion>
                     </div>
-                    <p className="py-4">US</p>
                   </div>
                 </div>
 
