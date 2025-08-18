@@ -32,7 +32,7 @@ const Menus = () => {
            [&>button]:top-6 [&>button]:right-4 [&>button]:absolute 
            [&>button>svg]:w-6 [&>button>svg]:h-6"
             >
-              <div className="p-6 flex flex-col gap-4 h-full justify-between">
+              <div className="p-6 flex flex-col gap-4 min-h-screen justify-between">
                 {/* Header */}
                 <div>
                   <div className="flex justify-between items-center mb-6">
@@ -47,7 +47,11 @@ const Menus = () => {
                     <p className="py-4">Community</p>
 
                     {/* Discover Accordion */}
-                    <Accordion type="single" collapsible className="w-full">
+                    <Accordion
+                      type="single"
+                      collapsible
+                      className="w-full  border-none focus-visible:outline-none focus-visible:ring-0  "
+                    >
                       <AccordionItem value="discover">
                         <AccordionTrigger className="py-4 font-medium text-left">
                           Discover
