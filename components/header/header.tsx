@@ -38,10 +38,6 @@ const menu = [
       },
     ],
   },
-  {
-    name: "Accessories",
-    link: "/accessories",
-  },
 ];
 
 const Header = () => {
