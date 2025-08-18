@@ -44,66 +44,17 @@ const Menus = () => {
                     <p className="py-4">Home</p>
                     <p className="py-4">About Us</p>
                     <div className="">
-                      {/* <Accordion
-                        type="single"
-                        collapsible
-                        className="w-full  border-none focus-visible:outline-none focus-visible:ring-0"
-                      >
-                        <AccordionItem value="discover" className="border-none">
-                          <AccordionTrigger className="py-4 font-medium text-left">
-                            Discover
-                          </AccordionTrigger>
-                          <AccordionContent className="pl-4 pb-4 pt-1 flex flex-col gap-4 text-gray-600">
-                            <div>
-                              <p className="uppercase mb-2">Our story</p>
-                              <p>
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Quidem dolor doloremque, esse
-                              </p>
-                              <div className="flex gap-3 overflow-x-auto  hide-scrollbar">
-                                <div className="relative w-32 h-32 flex-shrink-0">
-                                  <Image
-                                    src="/products/cuppa.jpg"
-                                    alt="Cup"
-                                    fill
-                                    className="object-cover"
-                                  />
-                                </div>
-                                <div className="relative w-32 h-32 flex-shrink-0">
-                                  <Image
-                                    src="/products/cuppa.jpg"
-                                    alt="Cup"
-                                    fill
-                                    className="object-cover"
-                                  />
-                                </div>
-                                <div className="relative w-32 h-32 flex-shrink-0">
-                                  <Image
-                                    src="/products/cuppa.jpg"
-                                    alt="Cup"
-                                    fill
-                                    className="object-cover"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                            <Link href="/">Our Commitment</Link>
-                          </AccordionContent>
-                        </AccordionItem>
-                      </Accordion> */}
-                    </div>
-
-                    <p className="py-4">Community</p>
-                    {/* Discover Accordion */}
-                    <div>
                       <Accordion
                         type="single"
                         collapsible
                         className="w-full  border-none focus-visible:outline-none focus-visible:ring-0"
                       >
-                        <AccordionItem value="discover" className="border-none">
+                        <AccordionItem
+                          value="teas"
+                          className="!border-none !shadow-none"
+                        >
                           <AccordionTrigger className="py-4 font-medium text-left">
-                            Discover
+                            Teas
                           </AccordionTrigger>
                           <AccordionContent className="pl-4 pb-4 pt-1 flex flex-col gap-4 text-gray-600">
                             <div>
@@ -144,7 +95,56 @@ const Menus = () => {
                         </AccordionItem>
                       </Accordion>
                     </div>
-                    <p className="py-4">About Us</p>
+
+                    <p className="py-4">Community</p>
+                    {/* Discover Accordion */}
+                    <Accordion
+                      type="single"
+                      collapsible
+                      className="w-full  border-none focus-visible:outline-none focus-visible:ring-0"
+                    >
+                      <AccordionItem value="discover" className="border-none">
+                        <AccordionTrigger className="py-4 font-medium text-left">
+                          Discover
+                        </AccordionTrigger>
+                        <AccordionContent className="pl-4 pb-4 pt-1 flex flex-col gap-4 text-gray-600">
+                          <div>
+                            <p className="uppercase mb-2">Our story</p>
+                            <p>
+                              Lorem ipsum dolor sit, amet consectetur
+                              adipisicing elit. Quidem dolor doloremque, esse
+                            </p>
+                            <div className="flex gap-3 overflow-x-auto  hide-scrollbar">
+                              <div className="relative w-32 h-32 flex-shrink-0">
+                                <Image
+                                  src="/products/cuppa.jpg"
+                                  alt="Cup"
+                                  fill
+                                  className="object-cover"
+                                />
+                              </div>
+                              <div className="relative w-32 h-32 flex-shrink-0">
+                                <Image
+                                  src="/products/cuppa.jpg"
+                                  alt="Cup"
+                                  fill
+                                  className="object-cover"
+                                />
+                              </div>
+                              <div className="relative w-32 h-32 flex-shrink-0">
+                                <Image
+                                  src="/products/cuppa.jpg"
+                                  alt="Cup"
+                                  fill
+                                  className="object-cover"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <Link href="/">Our Commitment</Link>
+                        </AccordionContent>
+                      </AccordionItem>
+                    </Accordion>
                   </div>
                 </div>
 
