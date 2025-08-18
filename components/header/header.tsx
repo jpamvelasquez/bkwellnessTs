@@ -42,7 +42,7 @@ const menu = [
 
 const Header = () => {
   return (
-    <div className="sticky z-50 top-0 bg-amber-100">
+    <div className="sticky z-50 top-0">
       <header className="shadow-2xl px-3 ">
         <div className="container mx-auto p-5 md:p-0">
           <nav className="md:flex justify-between items-center hidden">
