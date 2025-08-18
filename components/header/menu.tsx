@@ -48,8 +48,11 @@ const Menus = () => {
                         type="multiple"
                         className="w-full !border-none !focus-visible:outline-none !focus-visible:ring-0"
                       >
-                        <AccordionItem value="products" className="border-none">
-                          <AccordionTrigger className=" font-medium text-left">
+                        <AccordionItem
+                          value="products"
+                          className="!border-none !shadow-none !ring-0 !focus:outline-none !focus-visible:ring-0 data-[state=open]:!border-none"
+                        >
+                          <AccordionTrigger className=" font-medium text-left !ring-0 !focus:outline-none !focus-visible:ring-0">
                             Products
                           </AccordionTrigger>
                           <AccordionContent className="pl-4 pb-4 pt-1 flex flex-col gap-4 text-gray-600">
