@@ -15,8 +15,8 @@ import Image from "next/image";
 
 const Menus = () => {
   return (
-    <nav className="md:hidden">
-      <div className="flex justify-between items-center px-4 py-2">
+    <nav className="md:hidden ">
+      <div className="flex justify-between items-center  py-2">
         {/* Left Section */}
         <div className="flex gap-2 items-center">
           <Sheet>
@@ -49,11 +49,14 @@ const Menus = () => {
                         collapsible
                         className="w-full  border-none focus-visible:outline-none focus-visible:ring-0"
                       >
-                        <AccordionItem value="teas" className="border-none">
+                        <AccordionItem
+                          value="teas"
+                          className="border-0 shadow-none"
+                        >
                           <AccordionTrigger className="py-4 font-medium text-left text-red-400">
                             Teas
                           </AccordionTrigger>
-                          <AccordionContent className="pl-4 pb-4 pt-1 flex flex-col gap-4 text-gray-600">
+                          <AccordionContent className="pl-4 pb-4 pt-1 flex flex-col gap-4 text-gray-600 border-none">
                             <p className="uppercase mb-2">Turmeric 14in1</p>
                             <p className="my-2">
                               Lorem ipsum dolor sit, amet consectetur
