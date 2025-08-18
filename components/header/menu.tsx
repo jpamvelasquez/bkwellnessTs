@@ -18,7 +18,7 @@ const Menus = () => {
     <nav className="md:hidden ">
       <div className="flex justify-between items-center  py-2">
         {/* Left Section */}
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-4 items-center">
           <Sheet>
             <SheetTrigger asChild>
               <button aria-label="Open menu">
@@ -49,21 +49,18 @@ const Menus = () => {
                         collapsible
                         className="w-full  border-none focus-visible:outline-none focus-visible:ring-0"
                       >
-                        <AccordionItem
-                          value="teas"
-                          className="border-0 shadow-none"
-                        >
-                          <AccordionTrigger className="py-4 font-medium text-left text-red-400">
-                            Teas
+                        <AccordionItem value="discover" className="border-none">
+                          <AccordionTrigger className="py-4 font-medium text-left">
+                            Discover
                           </AccordionTrigger>
-                          <AccordionContent className="pl-4 pb-4 pt-1 flex flex-col gap-4 text-gray-600 border-none">
-                            <p className="uppercase mb-2">Turmeric 14in1</p>
-                            <p className="my-2">
-                              Lorem ipsum dolor sit, amet consectetur
-                              adipisicing elit. Quidem dolor doloremque, esse
-                            </p>
-                            <div className="flex gap-3 overflow-x-auto hide-scrollbar">
-                              <div>
+                          <AccordionContent className="pl-4 pb-4 pt-1 flex flex-col gap-4 text-gray-600">
+                            <div>
+                              <p className="uppercase mb-2">Our story</p>
+                              <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Quidem dolor doloremque, esse
+                              </p>
+                              <div className="flex gap-3 overflow-x-auto  hide-scrollbar">
                                 <div className="relative w-32 h-32 flex-shrink-0">
                                   <Image
                                     src="/products/cuppa.jpg"
@@ -72,9 +69,6 @@ const Menus = () => {
                                     className="object-cover"
                                   />
                                 </div>
-                                <p className="my-2">150 Grams</p>
-                              </div>
-                              <div>
                                 <div className="relative w-32 h-32 flex-shrink-0">
                                   <Image
                                     src="/products/cuppa.jpg"
@@ -83,9 +77,6 @@ const Menus = () => {
                                     className="object-cover"
                                   />
                                 </div>
-                                <p className="my-2">400 Grams</p>
-                              </div>
-                              <div>
                                 <div className="relative w-32 h-32 flex-shrink-0">
                                   <Image
                                     src="/products/cuppa.jpg"
@@ -94,9 +85,9 @@ const Menus = () => {
                                     className="object-cover"
                                   />
                                 </div>
-                                <p className="my-2">350 Grams</p>
                               </div>
                             </div>
+                            <Link href="/">Our Commitment</Link>
                           </AccordionContent>
                         </AccordionItem>
                       </Accordion>
@@ -174,7 +165,7 @@ const Menus = () => {
         </div>
 
         {/* Right Icons */}
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-3 items-center">
           <Heart />
           <ShoppingCart />
         </div>
