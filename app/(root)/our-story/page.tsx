@@ -89,15 +89,15 @@ const OurStory = () => {
             </p>
             <p className="my-6">
               From our first handcrafted essential oil blends to our now
-              expansive line of self-care tools and educational resources, we've
-              remained committed to authenticity, sustainability, and the belief
-              that wellness should be accessible to everyone.
+              expansive line of self-care tools and educational resources,
+              we&apos;ve remained committed to authenticity, sustainability, and
+              the belief that wellness should be accessible to everyone.
             </p>
             <p>
               From our first handcrafted essential oil blends to our now
-              expansive line of self-care tools and educational resources, we've
-              remained committed to authenticity, sustainability, and the belief
-              that wellness should be accessible to everyone.
+              expansive line of self-care tools and educational resources,
+              we&apos;ve remained committed to authenticity, sustainability, and
+              the belief that wellness should be accessible to everyone.
             </p>
           </div>
         </div>
