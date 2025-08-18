@@ -45,14 +45,13 @@ const Menus = () => {
                     <p className="py-4">About Us</p>
                     <p className="py-4">Teas</p>
                     <p className="py-4">Community</p>
-
                     {/* Discover Accordion */}
                     <Accordion
                       type="single"
                       collapsible
                       className="w-full  border-none focus-visible:outline-none focus-visible:ring-0  "
                     >
-                      <AccordionItem value="discover">
+                      <AccordionItem value="discover" className="border-none">
                         <AccordionTrigger className="py-4 font-medium text-left">
                           Discover
                         </AccordionTrigger>
