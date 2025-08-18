@@ -51,7 +51,7 @@ const Menus = () => {
                       >
                         <AccordionItem
                           value="products"
-                          className="!border-none !shadow-none"
+                          className="!border-none !shadow-none !focus-visible:outline-none !focus-visible:ring-0"
                         >
                           <AccordionTrigger className="py-4 font-medium text-left">
                             Products
