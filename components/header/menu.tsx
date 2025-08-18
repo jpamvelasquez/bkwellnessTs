@@ -1,6 +1,6 @@
 "use client";
 
-import { Heart, Menu, Search, ShoppingCart, User, X } from "lucide-react";
+import { Heart, Menu, Search, ShoppingCart, User } from "lucide-react";
 
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 
@@ -50,7 +50,7 @@ const Menus = () => {
                         className="w-full  border-none focus-visible:outline-none focus-visible:ring-0"
                       >
                         <AccordionItem value="teas" className="border-none">
-                          <AccordionTrigger className="py-4 font-medium text-left">
+                          <AccordionTrigger className="py-4 font-medium text-left text-red-400">
                             Teas
                           </AccordionTrigger>
                           <AccordionContent className="pl-4 pb-4 pt-1 flex flex-col gap-4 text-gray-600">
@@ -104,7 +104,7 @@ const Menus = () => {
                     <Accordion
                       type="single"
                       collapsible
-                      className="w-full  border-none focus-visible:outline-none focus-visible:ring-0  "
+                      className="w-full  border-none focus-visible:outline-none focus-visible:ring-0"
                     >
                       <AccordionItem value="discover" className="border-none">
                         <AccordionTrigger className="py-4 font-medium text-left">
@@ -117,7 +117,7 @@ const Menus = () => {
                               Lorem ipsum dolor sit, amet consectetur
                               adipisicing elit. Quidem dolor doloremque, esse
                             </p>
-                            <div className="flex gap-3 overflow-x-auto whitespace-nowrap">
+                            <div className="flex gap-3 overflow-x-auto  hide-scrollbar">
                               <div className="relative w-32 h-32 flex-shrink-0">
                                 <Image
                                   src="/products/cuppa.jpg"
