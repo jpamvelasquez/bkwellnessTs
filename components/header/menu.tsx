@@ -33,8 +33,7 @@ const Menus = () => {
             <SheetContent
               side="left"
               className="w-[350px] border-none bg-stone-200 focus-visible:outline-none focus-visible:ring-0  
-           [&>button]:top-7 [&>button]:right-4 [&>button]:absolute 
-           [&>button>svg]:w-6 [&>button>svg]:h-6 [&>button>svg]:bg-amber-600 [&>button>svg]:rounded "
+            "
             >
               <div className="p-6 flex flex-col gap-4 h-full overflow-y-auto justify-between hide-scrollbar">
                 {/* Header */}

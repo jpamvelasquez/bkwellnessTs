@@ -1,3 +1,4 @@
+import CustomerService from "@/components/customer-service/customer-service";
 import Footer from "@/components/footer/footer";
 import Banner from "@/components/header/banner";
 
@@ -14,7 +15,10 @@ export default function RootLayout({
       <Header />
 
       <main className="flex-1 wrapper">{children}</main>
-      <Footer />
+      <div className="mt-14">
+        <CustomerService />
+        <Footer />
+      </div>
     </div>
   );
 }
