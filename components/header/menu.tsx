@@ -1,8 +1,14 @@
 "use client";
 
-import { Heart, Menu, Search, ShoppingCart, User, X } from "lucide-react";
+import { Heart, Menu, Search, ShoppingCart, User } from "lucide-react";
 
-import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetTitle,
+  SheetTrigger,
+} from "../ui/sheet";
 
 import {
   Accordion,
@@ -33,17 +39,16 @@ const Menus = () => {
             <SheetContent
               side="left"
               className="w-[350px] border-none bg-stone-200 focus-visible:outline-none focus-visible:ring-0  
-            "
+           [&>button]:top-7 [&>button]:right-4 [&>button]:absolute 
+           [&>button>svg]:w-6 [&>button>svg]:h-6  "
             >
               <div className="p-6 flex flex-col gap-4 h-full overflow-y-auto justify-between hide-scrollbar">
                 {/* Header */}
                 <div>
-                  <div className="flex justify-between items-center mb-6">
-                    <div className="font-bold text-2xl">BKWellness</div>
-                  </div>
+                  <SheetTitle className="text-2xl">BKWellness</SheetTitle>
 
                   {/* Menu Items */}
-                  <div className="flex flex-col gap-0 divide-y divide-gray-300 text-gray-800 text-sm">
+                  <div className="flex flex-col gap-0 divide-y divide-gray-300 text-gray-800 text-sm mt-5">
                     <p className="py-4">Home</p>
                     <p className="py-4">About Us</p>
                     <div className="">
@@ -168,6 +173,7 @@ const Menus = () => {
                   </div>
                 </div>
               </div>
+              <SheetDescription></SheetDescription>
             </SheetContent>
           </Sheet>
 
