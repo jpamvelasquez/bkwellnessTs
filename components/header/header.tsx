@@ -67,7 +67,7 @@ const Header = () => {
                             {nav.name}
                           </NavigationMenuTrigger>
 
-                          <NavigationMenuContent className="bg-white shadow-md p-4 rounded-md ">
+                          <NavigationMenuContent className=" shadow-md p-4 rounded-md  ">
                             <ul className="grid gap-3 2xl:w-[400px] md:w-[300px]">
                               {nav.menu.map((item, i) => (
                                 <li key={i} className="">

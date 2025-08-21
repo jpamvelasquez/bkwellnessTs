@@ -38,9 +38,9 @@ const Menus = () => {
 
             <SheetContent
               side="left"
-              className="w-[350px] border-none bg-stone-200 focus-visible:outline-none focus-visible:ring-0  
+              className="w-[350px] border-none  focus-visible:outline-none focus-visible:ring-0  
            [&>button]:top-7 [&>button]:right-4 [&>button]:absolute 
-           [&>button>svg]:w-6 [&>button>svg]:h-6  "
+           [&>button>svg]:w-6 [&>button>svg]:h-6 [&>button>svg]:bg-white [&>button>svg]:shadow-lg "
             >
               <div className="p-6 flex flex-col gap-4 h-full overflow-y-auto justify-between hide-scrollbar">
                 {/* Header */}
@@ -49,8 +49,12 @@ const Menus = () => {
 
                   {/* Menu Items */}
                   <div className="flex flex-col gap-0 divide-y divide-gray-300 text-gray-800 text-sm mt-5">
-                    <p className="py-4">Home</p>
-                    <p className="py-4">About Us</p>
+                    <Link href="/" className="py-4 hover:underline">
+                      Home
+                    </Link>
+                    <Link href="/" className="py-4 hover:underline">
+                      About Us
+                    </Link>
                     <div className="">
                       <Accordion
                         type="multiple"
@@ -64,14 +68,16 @@ const Menus = () => {
                             Products
                           </AccordionTrigger>
                           <AccordionContent className="pl-4 pb-4 pt-1 flex flex-col gap-4 text-gray-600">
-                            <div>
-                              <p className="uppercase mb-2">What we have</p>
+                            <div className="group">
+                              <p className="uppercase mb-2 font-bold group-hover:underline">
+                                What we have
+                              </p>
                               <p className="mb-3">
                                 Lorem ipsum dolor sit, amet consectetur
                                 adipisicing elit. Quidem dolor doloremque, esse
                               </p>
                               <div className="flex gap-3 overflow-x-auto  hide-scrollbar">
-                                <div>
+                                <div className="">
                                   <div className="relative w-32 h-32 flex-shrink-0">
                                     <Image
                                       src="/products/honey.jpg"
@@ -111,7 +117,9 @@ const Menus = () => {
                       </Accordion>
                     </div>
 
-                    <p className="py-4">Community</p>
+                    <Link href="/" className="py-4 hover:underline ">
+                      Community
+                    </Link>
                     {/* Discover Accordion */}
 
                     <div>
@@ -124,40 +132,52 @@ const Menus = () => {
                             Discover
                           </AccordionTrigger>
                           <AccordionContent className="pl-4 pb-4 pt-1 flex flex-col gap-4 text-gray-600">
-                            <div>
-                              <p className="uppercase mb-2">Our story</p>
-                              <p>
+                            <div className="group">
+                              <Link href="/" className="cursor-pointer">
+                                <p className="uppercase mb-2 group-hover:underline font-bold">
+                                  Our story
+                                </p>
+                              </Link>
+                              <p className="my-3">
                                 Lorem ipsum dolor sit, amet consectetur
                                 adipisicing elit. Quidem dolor doloremque, esse
                               </p>
                               <div className="flex gap-3 overflow-x-auto  hide-scrollbar">
-                                <div className="relative w-32 h-32 flex-shrink-0">
-                                  <Image
-                                    src="/products/cuppa.jpg"
-                                    alt="Cup"
-                                    fill
-                                    className="object-cover"
-                                  />
-                                </div>
-                                <div className="relative w-32 h-32 flex-shrink-0">
-                                  <Image
-                                    src="/products/cuppa.jpg"
-                                    alt="Cup"
-                                    fill
-                                    className="object-cover"
-                                  />
-                                </div>
-                                <div className="relative w-32 h-32 flex-shrink-0">
-                                  <Image
-                                    src="/products/cuppa.jpg"
-                                    alt="Cup"
-                                    fill
-                                    className="object-cover"
-                                  />
-                                </div>
+                                <Link href="/" className="cursor-pointer">
+                                  <div className="relative w-32 h-32 flex-shrink-0">
+                                    <Image
+                                      src="/featured/ourstory.jpg"
+                                      alt="Cup"
+                                      fill
+                                      className="object-cover "
+                                    />
+                                  </div>
+                                </Link>
                               </div>
                             </div>
-                            <Link href="/">Our Commitment</Link>
+                            <div className="group mt-6">
+                              <Link href="/" className="cursor-pointer">
+                                <p className="uppercase mb-2 group-hover:underline font-bold">
+                                  Our Committment
+                                </p>
+                              </Link>
+                              <p className="my-3">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Quidem dolor doloremque, esse
+                              </p>
+                              <div className="flex gap-3 overflow-x-auto  hide-scrollbar">
+                                <Link href="/" className="cursor-pointer">
+                                  <div className="relative w-32 h-32 flex-shrink-0">
+                                    <Image
+                                      src="/featured/tea.jpg"
+                                      alt="Cup"
+                                      fill
+                                      className="object-cover "
+                                    />
+                                  </div>
+                                </Link>
+                              </div>
+                            </div>
                           </AccordionContent>
                         </AccordionItem>
                       </Accordion>

@@ -4,7 +4,7 @@ import { MdCall } from "react-icons/md";
 
 const CustomerService = () => {
   return (
-    <div className="bg-amber-50 p-2">
+    <div className="bg-amber-50 px-4 xl:px-0">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between gap-7 items-center md:h-[200px]">
           <div className="md:h-[150px]">
