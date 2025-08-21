@@ -15,7 +15,7 @@ const ProductAdd = () => {
         </div>
         <div className="bg-stone text-white md:inset-0 md:absolute  lg:flex lg:flex-col  lg:px-3 xl:px-20 2xl:px-28 container mx-auto z-10 ">
           <div className="md:max-w-2xl  w-full flex flex-col h-full  justify-center lg:px-3 md:px-3 lg:max-w-xl xl:max-w-2xl ">
-            <div className="2xl:bg-stone-300 md:bg-stone-300/40 md:text-white 2xl:text-black p-6 flex flex-col gap-4 md:gap-8 rounded-md text-black bg-stone-300">
+            <div className="2xl:bg-stone-300 md:bg-stone-300/40 md:text-white 2xl:text-black p-6 flex flex-col gap-4 md:gap-8 md:rounded-md text-black bg-stone-300">
               <h2 className="md:text-4xl lg:text-2xl font-bold text-2xl">
                 Extreme and everyday adventures
               </h2>
