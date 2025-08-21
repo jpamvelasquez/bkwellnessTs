@@ -25,7 +25,7 @@ const ProductDisplay = () => {
     <div className="container mx-auto">
       <div className="flex justify-center items-center max-w-7xl mx-auto my-8 gap-7 pl-3">
         <div className="text-4xl font-bold whitespace-nowrap">What We Have</div>
-        <div className="flex-1 bg-amber-200 h-[2px]" />
+        <div className="flex-1 bg-orange-600 h-[2px]" />
       </div>
       <div className="flex flex-col md:flex-row px-3 justify-evenly  items-center gap-4">
         {product.map((p, i) => (

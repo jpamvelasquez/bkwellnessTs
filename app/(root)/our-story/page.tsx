@@ -12,7 +12,7 @@ import {
 const OurStory = () => {
   return (
     <div className="">
-      <div className="md:h-[60vh] bg-amber-100 w-full lg:h-[500px] xl:h-[60vh] 2xl:h-[60vh]">
+      <div className="md:h-[60vh] w-full lg:h-[500px] xl:h-[60vh] 2xl:h-[60vh]">
         <div className="flex flex-col relative">
           <div className="relative md:h-[60vh] h-[50vh] w-full lg:h-[500px] xl:h-[60vh] 2xl:h-[60vh]">
             <Image
@@ -22,7 +22,7 @@ const OurStory = () => {
               className="object-cover md:object-[left_50%] object-[center_50%]"
             />
           </div>
-          <div className="bg-stone text-white md:inset-0 md:absolute  lg:flex lg:flex-col  container mx-auto z-10">
+          <div className=" text-white md:inset-0 md:absolute  lg:flex lg:flex-col  container mx-auto z-10">
             <div className="md:max-w-2xl  w-full flex flex-col h-full  justify-center lg:px-3 md:px-3 lg:max-w-md xl:max-w-2xl 2xl:max-w-xl">
               <div className="2xl:bg-stone-300/20 backdrop-blur-md md:bg-stone-300/40 md:text-white 2xl:text-black lg:text-black p-6 flex flex-col gap-4 md:gap-8  text-black bg-stone-300">
                 <h2 className="md:text-xl lg:text-xl font-bold text-xl">
@@ -44,7 +44,7 @@ const OurStory = () => {
           </div>
         </div>
       </div>
-      <div className="bg-stone-50 py-3">
+      <div className="py-3">
         <div className="container mx-auto  px-5">
           <Breadcrumb>
             <BreadcrumbList>

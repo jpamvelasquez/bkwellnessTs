@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-amber-50 md:bg-white border-none ">
+    <html lang="en" className="">
       <body className={`${raleway.className} antialiased m-0 p-0`}>
         {children}
       </body>
